@@ -1,0 +1,51 @@
+{
+  "name": "smart-free-router",
+  "version": "0.1.0",
+  "description": "Smart Free Router (SFR): an evidence-driven multi-model harness for opencode. Routes openrouter/free through the best free model per task with health-aware failover, continuity shims, per-model param sanitization and tool-call repair.",
+  "license": "MIT",
+  "author": {
+    "name": "Nicola Trinca",
+    "url": "https://github.com/trinik15"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "sfr": "src/cli.js"
+  },
+  "exports": {
+    ".": "./src/opencode.ts",
+    "./server": "./src/server.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test --test-concurrency=1 test/",
+    "serve": "node src/cli.js serve",
+    "init": "node src/cli.js init"
+  },
+  "keywords": [
+    "opencode",
+    "openrouter",
+    "llm",
+    "proxy",
+    "router",
+    "free-models",
+    "ai-sdk",
+    "failover"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinik15/smart-free-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trinik15/smart-free-router/issues"
+  },
+  "homepage": "https://github.com/trinik15/smart-free-router#readme"
+}
