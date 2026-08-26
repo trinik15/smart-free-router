@@ -1,5 +1,8 @@
 # SFR — Smart Free Router
 
+[![ci](https://github.com/trinik15/smart-free-router/actions/workflows/ci.yml/badge.svg)](https://github.com/trinik15/smart-free-router/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/smart-free-router.svg)](https://www.npmjs.com/package/smart-free-router)
+
 An evidence-driven **multi-model harness** that turns OpenRouter's free tier into
 one reliable, self-improving model. Point your agent at SFR; it classifies every
 request, routes it to the best *currently alive* free model, repairs what free
